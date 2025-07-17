@@ -1,64 +1,44 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiKaggle } from "react-icons/si";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <Container fluid className="footer home-about-social">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
+        <Col md={12} style={{ textAlign: 'center' }}>
+          <h3><span className="teal">FIND</span> ME ON</h3>
+          <ul className="home-about-social-links">
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="https://github.com/Rafiiisy"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-colour home-social-icons"
               >
                 <AiFillGithub />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="https://www.kaggle.com/rafisyafrinaldi"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-colour home-social-icons"
               >
-                <AiOutlineTwitter />
+                <SiKaggle />
               </a>
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/muhammad-rafi-syafrinaldi/"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-colour home-social-icons"
               >
                 <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
               </a>
             </li>
           </ul>
