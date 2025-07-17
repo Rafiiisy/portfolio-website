@@ -17,7 +17,7 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
+            <Col xs={12} md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -38,7 +38,7 @@ function Home() {
             </p>
             </Col>
 
-            <Col md={4} className="myAvtar">
+            <Col xs={12} md={4} className="myAvtar mt-4 mt-md-0">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>

@@ -311,7 +311,9 @@ button:focus {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
-    position: absolute !important;
+    /* Remove position absolute to prevent overlap */
+    position: static !important;
+    margin-bottom: 1em !important;
   }
   .Typewriter__cursor {
     display: none !important;
